@@ -1,46 +1,62 @@
 
-var dia = new Date();
-var dia_semana = dia.getDate();
 
-switch (dia){
-   case 0:
-       document.write("Hoy es Lunes");
-       break;
+function dia(){
+
+//El switch recoje los dias de la semana 
+switch (new Date().getDay() ) {
+    //Si es lunes imprimira la siguiente informacion
    case 1:
-       document.write("Hoy es Martes");
+       document.write("Hoy es Lunes comunista");
+       document.body.style.backgroundColor = "red";
        break;
-    case 2:
-       document.write("Hoy es Miercoles");
-       break;
-    case 3:
-       document.write("Hoy es Jueves");
-       break;
-    case 4:
-       document.write("Hoy es Viernes");
-       break;
-    case 5:
-        document.write("Hoy es S");
+           //Si es martes imprimira la siguiente informacion
+   case 2:
+        document.write("Hoy es Martes espacial");
+        document.body.style.backgroundColor = "blue";
         break;
-    case 6:
-       document.write("Hoy es Martes");
-       break;
-          
+    //Si es miercoles imprimira la siguiente informacion
+    case 3:
+        document.write("Hoy es Miercoles de linterna verde");
+        document.body.style.backgroundColor = "green";
+        break;
+        //Si es jueves imprimira la siguiente informacion
 
+        case 4:
+        document.write("Hoy es Jueves amarillo como el solo");
+        document.body.style.backgroundColor = "yellow";
 
-    
+        break;
+      //Si es viernes imprimira la siguiente informacion
+
+        case 5:
+        document.write("Hoy es Black Friday");
+        document.body.style.backgroundColor = "black";
+        document.body.style.color = "white";
+
+        break;
+        //Si es sabado imprimira la siguiente informacion
+
+        case 6:
+        document.write("Hoy es Sabado gris");
+        document.body.style.backgroundColor = "grey";
+
+        break;
+     //Si es domingo imprimira la siguiente informacion
+
+        case 7:
+        document.write("Hoy es Domingo blanco");
+        document.body.style.backgroundColor = "blacno";
+        document.body.style.color = "black";
+
+        break;
+      //Si hay error imprimira lo siguiente
+      default:
+          document.write("No hay nada");
+        
 }
 
+}
 
-document.write(
-    `Dia: ${d.getDate()}, <br>Dia de la semana(0 al 6): ${d.getDay
-        ()}, Mes(0 - 11) ${d.getMonth()}, <br>Hora: ${d.getFullYear()}, <br>Hora: ${d.getHours()}, <br>Minutos: ${d.getMinutes()}, <br> ${d.getSeconds()}`
-)
+dia();
 
-var fecharHora = new Date();
-var mes = fecharHora.getMonth() + 1;
 
-var dia = fechaHora.getDate();
-fecharHora.getDate();
-var mes = m < 10 ? "0" + m : n;
-
-document.write(`FECHA: ${dia}/${mes}/${fecharHora.getFullYear()}`);
